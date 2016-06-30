@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C41F195-226A-4FC1-B417-D60090B19937}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenGamingSystem.Entities</RootNamespace>
+    <AssemblyName>OpenGamingSystem.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\ChangeEmailModel.cs" />
+    <Compile Include="Authentication\ChangePasswordModel.cs" />
+    <Compile Include="Authentication\ChangeSecurityQuestionModel.cs" />
+    <Compile Include="Authentication\EmailModel.cs" />
+    <Compile Include="Authentication\ForgotPasswordChangeModel.cs" />
+    <Compile Include="Authentication\ForgotPasswordModel.cs" />
+    <Compile Include="Authentication\GetVerificationTokenModel.cs" />
+    <Compile Include="Authentication\LoginModel.cs" />
+    <Compile Include="Authentication\RegistrationAdditionalData.cs" />
+    <Compile Include="Authentication\RegistrationModel.cs" />
+    <Compile Include="Authentication\SendVerificationSMSModel.cs" />
+    <Compile Include="Authentication\VerifyUserBySMSModel.cs" />
+    <Compile Include="Banks\BankModel.cs" />
+    <Compile Include="Banners\BannerModel.cs" />
+    <Compile Include="Banners\TypeModel.cs" />
+    <Compile Include="Bonuses\BonusModel.cs" />
+    <Compile Include="Bonuses\BonusTypeModel.cs" />
+    <Compile Include="Bonuses\FrontAllUserBonuses.cs" />
+    <Compile Include="Bonuses\FrontEndUserBonusObject.cs" />
+    <Compile Include="Bonuses\FrontUserFreeSpins.cs" />
+    <Compile Include="Bonuses\PublicBonusModel.cs" />
+    <Compile Include="Chat\ChatModel.cs" />
+    <Compile Include="Countries\CountryModel.cs" />
+    <Compile Include="Currencies\CurrencyModel.cs" />
+    <Compile Include="Devices\DeviceDetectionModel.cs" />
+    <Compile Include="Devices\DevicePlatform.cs" />
+    <Compile Include="Devices\DevicePlatformModel.cs" />
+    <Compile Include="Devices\DeviceType.cs" />
+    <Compile Include="Devices\DeviceTypeModel.cs" />
+    <Compile Include="FAQs\Category.cs" />
+    <Compile Include="FAQs\Entry.cs" />
+    <Compile Include="FAQs\EntryCategory.cs" />
+    <Compile Include="Games\GameCategoryFrontModel.cs" />
+    <Compile Include="Games\GameCategoryModel.cs" />
+    <Compile Include="Games\GameJackpotModel.cs" />
+    <Compile Include="Games\GameModel.cs" />
+    <Compile Include="Games\GamesFilterModel.cs" />
+    <Compile Include="Games\GamesSort.cs" />
+    <Compile Include="Games\GameTransactionModel.cs" />
+    <Compile Include="Games\GameTransactionsSearchModel.cs" />
+    <Compile Include="Games\GameURLModel.cs" />
+    <Compile Include="Games\GameUserInteractionModel.cs" />
+    <Compile Include="Games\JackpotModel.cs" />
+    <Compile Include="Games\LastPlayedModel.cs" />
+    <Compile Include="Games\RecentWinnersModel.cs" />
+    <Compile Include="Games\RecentWinnersRequestModel.cs" />
+    <Compile Include="Games\UserFavoriteCategoryModel.cs" />
+    <Compile Include="Games\UserFavoriteModel.cs" />
+    <Compile Include="Games\VendorModel.cs" />
+    <Compile Include="Games\VendorType.cs" />
+    <Compile Include="CloudAPI\Error.cs" />
+    <Compile Include="IPWhois\IPWhoisRequestModel.cs" />
+    <Compile Include="Languages\LanguageModel.cs" />
+    <Compile Include="Notices\NoticeModel.cs" />
+    <Compile Include="Pages\PageModel.cs" />
+    <Compile Include="Payments\PaymentMethod.cs" />
+    <Compile Include="Payments\PaymentSubmodule.cs" />
+    <Compile Include="Payments\PaymentType.cs" />
+    <Compile Include="Payments\PaymentUrlModel.cs" />
+    <Compile Include="Promotions\PromotionModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealityCheck\RealityCheckOptionModel.cs" />
+    <Compile Include="RealityCheck\RealityCheckUserSettingModel.cs" />
+    <Compile Include="ResponsibleGaming\SelfExclusionCategoryDurationModel.cs" />
+    <Compile Include="ResponsibleGaming\SelfExclusionCategoryModel.cs" />
+    <Compile Include="SecurityQuestions\SecurityQuestionModel.cs" />
+    <Compile Include="Translations\CreateTranslationModel.cs" />
+    <Compile Include="Translations\GetAllTranslationsModel.cs" />
+    <Compile Include="Translations\GetTranslationLiteModel.cs" />
+    <Compile Include="Translations\LoadRequestModel.cs" />
+    <Compile Include="Translations\TranslationModel.cs" />
+    <Compile Include="User\CheckUserModel.cs" />
+    <Compile Include="User\DBTokenIPModel.cs" />
+    <Compile Include="User\KYCLinkedObjectModel.cs" />
+    <Compile Include="User\KYVUploadModel.cs" />
+    <Compile Include="User\LimitDuration.cs" />
+    <Compile Include="User\LimitDurationModel.cs" />
+    <Compile Include="User\LimitModel.cs" />
+    <Compile Include="User\LimitType.cs" />
+    <Compile Include="User\SafeUserAdditionalFields.cs" />
+    <Compile Include="User\SafeUserDetails.cs" />
+    <Compile Include="User\SendEmailModel.cs" />
+    <Compile Include="User\SetUserLimitModel.cs" />
+    <Compile Include="User\UpdateUserModel.cs" />
+    <Compile Include="User\UserLimitModel.cs" />
+    <Compile Include="User\UserObjectModel.cs" />
+    <Compile Include="Validation\EmailModel.cs" />
+    <Compile Include="Validation\MobileModel.cs" />
+    <Compile Include="Validation\PhoneModel.cs" />
+    <Compile Include="Validation\UsernameModel.cs" />
+    <Compile Include="Wallet\BonusProductModel.cs" />
+    <Compile Include="Wallet\UserBonusModel.cs" />
+    <Compile Include="Wallet\UserWalletModel.cs" />
+    <Compile Include="Wallet\WalletTransactionsModel.cs" />
+    <Compile Include="Wallet\WalletTransactionsSearchModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
