@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AuthenticationApi\AuthenticationApi.csproj" />
+    <ProjectReference Include="..\OpenGamingSystem.OAuthProvider\OpenGamingSystem.OAuthProvider.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

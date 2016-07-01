@@ -14,6 +14,7 @@ namespace AuthenticationApi.Controllers
     {
         private static readonly AuthenticationContext _db = new AuthenticationContext();
 
+        [Authorize]
         [HttpGet]
         [ResponseType(typeof(List<ChangeEmailModel>))]
         public IHttpActionResult GetAllChangedEmails()
