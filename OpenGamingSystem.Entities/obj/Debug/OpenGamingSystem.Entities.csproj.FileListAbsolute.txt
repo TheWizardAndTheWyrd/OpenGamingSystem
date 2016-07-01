@@ -1,0 +1,10 @@
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\OpenGamingSystem.Entities.dll.config
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\OpenGamingSystem.Entities.dll
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\OpenGamingSystem.Entities.pdb
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\Newtonsoft.Json.dll
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\System.Net.Http.Formatting.dll
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\Newtonsoft.Json.xml
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\bin\Debug\System.Net.Http.Formatting.xml
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\obj\Debug\OpenGamingSystem.Entities.csprojResolveAssemblyReference.cache
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\obj\Debug\OpenGamingSystem.Entities.dll
+C:\src\dotnet\OpenGamingSystem\OpenGamingSystem\OpenGamingSystem.Entities\obj\Debug\OpenGamingSystem.Entities.pdb
