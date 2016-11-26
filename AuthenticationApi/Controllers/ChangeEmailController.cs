@@ -14,7 +14,6 @@ namespace AuthenticationApi.Controllers
     {
         private static readonly AuthenticationContext _db = new AuthenticationContext();
 
-        [Authorize]
         [HttpGet]
         [ResponseType(typeof(List<ChangeEmailModel>))]
         public IHttpActionResult GetAllChangedEmails()
@@ -28,6 +27,27 @@ namespace AuthenticationApi.Controllers
                 ServiceEventSource.Current.ServiceRequestFailed($"{e.TargetSite}", e.ToString());
                 return InternalServerError(e);
             }
+        }
+
+
+        public async Task<IHttpActionResult> CreateChangedEmail([FromBody] ChangeEmailModel model)
+        {
+            try
+            {
+                
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+
+        bool DoesChangedEmailExist(ChangeEmailModel model)
+        {
+            if (_db.ChangeEmailModels.Find(model.Email) != null)
+                return true;
+
+            return false;
         }
     }
 }
